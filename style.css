@@ -1,0 +1,78 @@
+button {
+    width:100px;
+    height:30px;
+    background-color:#FB6D48;
+    color:black;
+    font-weight: bold ;
+    border-radius: 20px;
+    border: 4px black solid;
+    margin-left: 0px;
+    cursor:pointer;
+}
+input{
+    margin-left: 30px;
+    margin-top:10px;
+    width:200px;
+    height:25px;
+    background-color:#F9DEC9 ;
+    border-radius: 20px;
+    border: none;
+    flex:1;
+    text-align: center;
+    padding-left:20px;
+}
+
+#mainbox{
+    margin-top:50px;
+    background-color:#49243E;
+    color:#EABE6C;
+    width: 400px;
+    height:600px;
+    border-width: 5px;
+    border-color:black;
+    border-style:solid;
+    margin-left: 33%;
+    border-radius:25px;
+    overflow:hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+h1{
+    background-color:#49243E;
+    text-align: center;
+}
+#listitem{
+    background-color:#49243E;
+    list-style: none;
+    color:#EABE6C;
+    padding-top:20px;
+    
+    cursor: pointer;
+    font-size:18px;
+}
+.checker{
+    width:15px;
+    height:15px;
+  
+    
+}
+li{
+    padding-top:5px;
+    
+    
+}
+.del{
+    width:70px;
+    height:20px;
+    border-radius: 15px;
+    border:none;
+}
+
+body{
+    background-color:#E1F0DA;
+}
+#tasklist{
+    overflow-y: auto;
+    flex:1;
+}

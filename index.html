@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do List📋</title>
+        <link rel="stylesheet" href="style.css">
+        
+
+    </head>
+    <body>
+         
+        <div id="mainbox">
+          <h1>TO DO LIST🎯</h1>
+          <input id="entervalue" placeholder="Add your task">
+          <button onclick="add()">Add</button>
+        
+         <div id ="tasklist">
+          <ul id="listitem">
+           <!--<li ><input class="checker" type="checkbox" onclick="strikeitem(event)">Task 1<button class="del" onclick="deleteitem(event)">Delete</button></li>
+            <li><input class="checker" type="checkbox" onclick="strikeitem(event)">Task 2<button class="del" onclick="deleteitem(event)">Delete</button></li>--> 
+          </ul>
+
+         </div>
+        </div>
+          
+    </body>
+</html>
+<script>
+  let input=document.getElementById("entervalue")
+  let ul =document.getElementById("listitem")
+  let checker=document.getElementsByClassName("checkbox")
+   
+   function add()
+  {
+    let element= document.createElement("li")
+    //element.innerHTML= <input class="checker" type="checkbox" onclick="strikeitem(event)"> + "input.value+"<button class='del' onclick='deleteitem(event)'>Delete</button>"//
+    //element.innerHTML = `<input class="checker" type="checkbox" onclick="strikeitem(event)"> ${input.value} <button class='del' onclick='deleteitem(event)'>Delete</button>`;//
+    element.innerHTML = '<input class="checker" type="checkbox" onclick="strikeitem(event)"> ' + input.value + ' <button class="del" onclick="deleteitem(event)">Delete</button>';
+
+
+    ul.append(element)
+  }
+  function strikeitem(event)
+  {
+    event.target.parentElement.style.textDecoration = "line-through";
+  }
+  function deleteitem(event)
+  {
+    event.target.parentElement.remove()
+  }
+
+
+</script>
